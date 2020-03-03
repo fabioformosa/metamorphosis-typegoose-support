@@ -1,16 +1,18 @@
 {
   "name": "@fabio.formosa/metamorphosis-typegoose-plugin",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "description": "Typegoose support for metamorphosis conversions",
+  "main": "dist/index.js",
   "dependencies": {},
   "peerDependencies": {
-    "@fabio.formosa/metamorphosis": "3.1.0-RC4",
+    "@fabio.formosa/metamorphosis": "3.1.0-RC6",
     "@typegoose/typegoose": "^6.1.6",
     "@types/jest": "^24.0.19",
     "@types/mongoose": "^5.5.21",
     "mongoose": "^5.7.7"
   },
   "devDependencies": {
-    "@fabio.formosa/metamorphosis": "3.1.0-RC4",
+    "@fabio.formosa/metamorphosis": "3.1.0-RC6",
     "@typegoose/typegoose": "^6.1.6",
     "@types/mongoose": "^5.5.21",
     "ts-jest": "^24.1.0",
@@ -30,5 +32,17 @@
     "test:debug": "node --inspect-brk -r ts-node/register -r tsconfig-paths/register node_modules/jest/bin/jest --runInBand",
     "test-travis": "jest --maxWorkers=2",
     "coveralls": "jest --maxWorkers=2 --coverage && cat ./tests/coverage/lcov.info | coveralls"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabioformosa/metamorphosis-typegoose-support.git"
+  },
+  "keywords": [
+    "nodejs",
+    "nest",
+    "conversion",
+    "service"
+  ],
+  "author": "Fabio Formosa",
+  "license": "MIT"
 }

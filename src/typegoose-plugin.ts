@@ -4,10 +4,6 @@ import { getClass } from '@typegoose/typegoose/lib/internal/utils';
 
 export default class TypegoosePlugin implements MetamorphosisPlugin{
 
-  constructor() {
-    pluginRegistry.register(this);
-  }
-
   rearrangeSourceType(sourceObj: any, targetClass: Function): Function {
     logger.log(`CONVERSION SERVICE - Typegoose support - detected sourceObj ${sourceObj.constructor.name} converting to ${targetClass.name}`);
     const actualSourceType = getClass(sourceObj) || sourceObj.constructor;
