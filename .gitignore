@@ -3,3 +3,4 @@ dist
 tests/coverage
 .idea
 *.iml
+index.js
